@@ -1,0 +1,41 @@
+project:
+  type: site
+  output-dir: docs
+
+site:
+  title: "Introdução à Linguagem R para Cientistas Ambientais"
+  footer: "Página criada usando [quarto](https://quarto.org/). <br>Licença de uso: [Creative Commons Atribuição-Compartilha Igual (CC BY-SA)](licenca.qmd)."
+  repo-url: https://github.com/beatrizmilz/2021-senacamb-intro-R
+  navbar:
+    type: dark
+    background: primary
+    left:
+    right:
+      - icon: github
+        href: https://github.com/beatrizmilz/2021-senacamb-intro-R
+  sidebar:
+    style: "floating"
+    search: true
+    contents:
+      - section: "Informações sobre o mini-curso"
+        contents:
+          - href: index.qmd
+            text: Página inicial
+          - profs.qmd
+          - bibliografia.qmd
+      - section: "Outras informações"
+        contents:
+          - licenca.qmd
+
+
+format:
+  html:
+    theme:
+      light: minty
+      dark: superhero
+    css: styles.css
+    toc: true
+    toc-title: "Nessa página"
+
+
+

@@ -1,0 +1,14 @@
+---
+title: "Introdução à Linguagem R para Cientistas Ambientais"
+---
+
+Este mini-curso faz parte da programação do [SENACAMB - Semana Nacional de Ciências Ambientais](https://linktr.ee/senacamb).
+
+
+R é uma linguagem de programação gratuita muito utilizada em pesquisa e em análise de dados, com muito potencial para ser usada para analisar dados ambientais. 
+
+Neste minicurso, será apresentado uma introdução teórica breve sobre o contexto dessa linguagem de programação e Environmental Data Science (Ciência de Dados Ambientais). 
+
+Falaremos do ciclo de ciência de dados, apresentaremos alguns conceitos de R básico e  também alguns exemplos com o famoso 'tidyverse', um conjunto de  ferramentas que usamos para trabalhar em cada uma das etapas do ciclo de ciência de dados (como a importação dos dados, arrumação, visualização, criação de relatórios, entre outros).
+
+
