@@ -8,7 +8,7 @@ Para as atividades do mini-curso, usaremos o R e o RStudio. Podemos utilizar ess
 
 ## RStudio Cloud
 
-- Acesse esse link e fazer um cadastro: COLOCAR O LINK DA CLOUD
+- Acesse esse link e fazer um cadastro: TODO: COLOCAR O LINK DA CLOUD
 
 
 ## R e RStudio instalados no computador
@@ -27,5 +27,15 @@ install.packages("tidyverse")
 
 ## Dia 1 - 08/11/2021
 
+- Slide
+
+- R Script: arquivo `aula_1.R` que está no [material do curso](https://github.com/beatrizmilz/2021-senacamb-intro-R/raw/main/material_do_curso.zip).
+
 
 ## Dia 2 - 09/11/2021
+
+- Script: arquivo `aula_2.R` que está no [material do curso](https://github.com/beatrizmilz/2021-senacamb-intro-R/raw/main/material_do_curso.zip).
+
+- Respostas dos exercicios: arquivo `aula_2_respostas.R` que está no [material do curso](https://github.com/beatrizmilz/2021-senacamb-intro-R/raw/main/material_do_curso.zip).
+
+- Os dados usados nessa aula foram obtidos através do pacote [reservatoriosBR](https://brunomioto.github.io/reservatoriosBR/).

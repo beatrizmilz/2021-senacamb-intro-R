@@ -3,12 +3,16 @@
 # que fazem parte do tidyverse
 
 # Carregar pacotes --------------------------------------------------------
+
 library(tidyverse)
 
 
 # Importar (ler) os dados -------------------------------------------------
 
 dados <- read_csv2("dados/dados_reservatorios_cantareira.csv")
+
+# Dados do pacote reservatoriosBR
+# https://brunomioto.github.io/reservatoriosBR/
 
 
 # Observar a base ---------------------------------
@@ -34,14 +38,16 @@ dados %>% glimpse()
 
 # Exercícios --------------------------------------------------------------
 
-# 1) IMPORTAÇÃO - Leia a base de dados nomes_reservatorios.csv
+# 1) Leia a base de dados nomes_reservatorios.csv
 # essa base está na pasta dados/
 # e salve em um objeto chamado reservatorios_bruto
 
 
 
-# 2) Observe a base usando glimpse(). Quantas colunas a base tem?
+# 2) Observe a base reservatorios_bruto usando glimpse().
+# Quantas colunas a base tem?
 # Quantas linhas a base tem?
+# Quais são as colunas da base?
 
 
 
@@ -87,7 +93,10 @@ dados %>%
 
 dados %>%
   select(
-    -vazao_vertida_m3_s,-vazao_turbinada_m3_s,-vazao_natural_m3_s,-vazao_incremental_m3_s
+    -vazao_vertida_m3_s,
+    -vazao_turbinada_m3_s,
+    -vazao_natural_m3_s,
+    -vazao_incremental_m3_s
   )
 
 
@@ -124,13 +133,14 @@ dados_arrumados <- dados %>%
 # Exercícios --------------------------------------------------------------
 
 
-# 3) ARRUMAÇÃO. Identifique 2 possíveis necessidades de correções
+# 3)  a) Identifique 2 possíveis necessidades de correções
 # no tipo de dado armazenado nas colunas da base.
 # Com mutate(), faça as correções e salve em um objeto
 # chamado reservatorios.
-# com a função glimpse(), verifique se está correto.
 
 
+
+# 3) b) com a função glimpse(), verifique se o resultado está correto.
 
 
 
@@ -172,17 +182,17 @@ dados %>%
 # 4) a) Em qual ano o reservatório atibainha
 # esteve com o menor volume util percentual?
 
-# 4b)  o contrário? E em qual ano esteve com os maiores niveis de
+# 4 b)  o contrário? E em qual ano esteve com os maiores niveis de
 # volume util percentual?
 
 
 
 ## group_by() ------------------------------------------
 
-
+# criando as colunas mes e ano
 dados_mes_ano <- dados %>%
   mutate(mes = lubridate::month(data),
-         ano= lubridate::year(data))
+         ano = lubridate::year(data))
 
 # agrupar por uma variável
 dados_mes_ano %>%
@@ -227,59 +237,48 @@ dados_mensais <- dados_mes_ano %>%
   # remover os grupos
   ungroup()
 
+# distinct() valores únicos! ---------
+
+# remove linhas repetidas
+dados %>% distinct()
+
+
+# remove linhas repetidas
+dados %>% distinct(reservatorio)
+
 # Exportar a base dados_mensais ------
 
+# exportar um csv2
 write_csv2(dados_mensais,
            "dados_exportados/dados_cantareira_mensais.csv")
 
+
+# exportar um arquivo excel
 writexl::write_xlsx(dados_mensais,
                     "dados_exportados/dados_cantareira_mensais.xlsx")
 
 
+# Exercícios/DESAFIO --------------------------------------------------------------
+# 5)  Vamos buscar o número de reservatórios por estado,
+# salvar em um objeto, e salvar o resultado no nosso computador
+# em um arquivo excel!
+
+# a) Faça uma sequência usando pipe, onde:
+# usando os dados de reservatorios
+  numero_reservatorios_por_estado <- reservatorios %>%
+# agrupe por estado (a coluna se chama estado_sigla)
+  ....   %>%
+# busque os nomes distintos/únicos de reservatórios
+  ....   %>%
+# faça uma contagem do número de linhas
+  ....   %>%
+# ordene de forma decrescente pelo número de linhas
+  ....
 
 
-# Exercícios --------------------------------------------------------------
+# b) Salve em um excel
 
+......(numero_reservatorios_por_estado,
+                    "dados_exportados/numero_reservatorios_por_estado.xlsx")
 
-
-# Resposta dos exercícios -------------------------------------------------
-
-# 1)
-reservatorios_bruto <- read_csv2("dados/nomes_reservatorios.csv")
-
-# 2)
-glimpse(reservatorios_bruto) # dar uma olhada na base
-nrow(reservatorios_bruto) # número de linhas
-ncol(reservatorios_bruto) # número de colunas
-
-
-# 3)
-reservatorios <- reservatorios_bruto %>%
-  mutate(codigo_municipio_ibge = as.character(codigo_municipio_ibge),
-         codigo = as.character(codigo))
-
-glimpse(reservatorios)
-
-
-# 4) a)
-
-dados %>%
-  select(data, reservatorio, volume_util_percentual) %>%
-  filter(reservatorio == "Atibainha") %>%
-  arrange(volume_util_percentual)
-
-
-# 4) b)
-dados %>%
-  select(data, reservatorio, volume_util_percentual) %>%
-  filter(reservatorio == "Atibainha") %>%
-  arrange(desc(volume_util_percentual))
-
-
-
-reservatorios %>%
-  group_by(estado_sigla, reservatorio) %>%
-  summarise(contagem = n()) %>%
-  arrange(desc(contagem))
-
-
+# Abra no seu computador o arquivo, para ver o resultado!

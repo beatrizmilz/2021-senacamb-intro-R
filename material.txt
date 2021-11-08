@@ -1,5 +1,6 @@
 2021-senacamb-intro-R.Rproj
 aula_1.R
 aula_2.R
+aula_2_respostas.R
 dados/
 dados_exportados/

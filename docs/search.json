@@ -39,7 +39,7 @@
     "href": "materiais.html#rstudio-cloud",
     "title": "Materiais",
     "section": "RStudio Cloud",
-    "text": "Acesse esse link e fazer um cadastro: COLOCAR O LINK DA CLOUD"
+    "text": "Acesse esse link e fazer um cadastro: TODO: COLOCAR O LINK DA CLOUD"
   },
   {
     "objectID": "materiais.html#r-e-rstudio-instalados-no-computador",
@@ -53,14 +53,14 @@
     "href": "materiais.html#dia-1---08112021",
     "title": "Materiais",
     "section": "Dia 1 - 08/11/2021",
-    "text": ""
+    "text": "Slide\nR Script: arquivo aula_1.R que está no material do curso."
   },
   {
     "objectID": "materiais.html#dia-2---09112021",
     "href": "materiais.html#dia-2---09112021",
     "title": "Materiais",
     "section": "Dia 2 - 09/11/2021",
-    "text": ""
+    "text": "Script: arquivo aula_2.R que está no material do curso.\nRespostas dos exercicios: arquivo aula_2_respostas.R que está no material do curso.\nOs dados usados nessa aula foram obtidos através do pacote reservatoriosBR."
   },
   {
     "objectID": "licenca.html",
