@@ -4,6 +4,8 @@ title: "Para estudar mais"
 
 - [Conjunto de links sobre Environmental Data Science](https://github.com/beatrizmilz/Ciencia_de_Dados_Ambientais#readme)
 
+- [Conjunto de links relacionados com R](https://materiais-estudo-r.netlify.app/)
+
 ## Em Português
 
  
@@ -18,12 +20,15 @@ Caio Lente, Athos Damiani, Beatriz Milz, Daniel Falbel, Fernando Correa, Julio T
 - Livro R para Ciência de Dados: Gratuito em [Inglês](https://www.curso-r.com/cursos/) e em [Espanhol](https://es.r4ds.hadley.nz/). 
 
 
-## Comunidades
+## Dúvidas
 
-Locais amigáveis para fazer perguntas :)
+- Envie sempre no [fórum da  Curso-R](https://discourse.curso-r.com/)
+
+
+## Comunidades
 
 - [Eventos e redes sociais das R-Ladies no Brasil](https://github.com/R-Ladies-Sao-Paulo/RLadies-Brasil)
 
-- [Fórum Curso-R](https://discourse.curso-r.com/)
-
 - [Telegram R-Brasil](https://t.me/rbrasiloficial)
+
+- Comunidade do Twitter

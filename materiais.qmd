@@ -1,0 +1,27 @@
+---
+title: "Materiais"
+---
+
+## Requisitos
+
+Para as atividades do mini-curso, usaremos o R e o RStudio. Podemos utilizar esses softwares de duas formas: instalando no nosso computador, ou usando uma versão online (que chamamos de RStudio Cloud).
+
+## RStudio Cloud
+
+- Acesse esse link e fazer um cadastro: COLOCAR O LINK DA CLOUD
+
+
+## R e RStudio instalados no computador
+
+- Instalar o tidyverse:
+
+```{r eval=FALSE, include=TRUE}
+install.packages("tidyverse")
+```
+
+- Baixar o material do curso neste link:
+
+## Dia 1 - 08/11/2021
+
+
+## Dia 2 - 09/11/2021

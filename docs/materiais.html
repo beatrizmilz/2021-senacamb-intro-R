@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="quarto-0.2.232">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>Introdução à Linguagem R para Cientistas Ambientais - Para estudar mais</title>
+  <title>Introdução à Linguagem R para Cientistas Ambientais - Materiais</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -11,6 +11,69 @@
     div.column{display: inline-block; vertical-align: top; width: 50%;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
 
   <!--[if lt IE 9]>
@@ -73,7 +136,7 @@
 </nav>
 <nav class="quarto-secondary-nav py-2 d-lg-none d-md-block " data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <div class="container-fluid d-flex justify-content-between">
-    <h1 class="quarto-secondary-nav-title mb-0 fs-3 d-inline">Para estudar mais</h1>
+    <h1 class="quarto-secondary-nav-title mb-0 fs-3 d-inline">Materiais</h1>
     <button type="button" class="quarto-btn-toggle btn d-lg-none py-0 px-1 d-inline-block border-0 ">
       <i class="bi bi-chevron-right"></i>
     </button>
@@ -104,7 +167,7 @@
   <a href="./profs.html" class="">Ministrante</a>
 </li>
           <li class="sidebar-item">
-  <a href="./bibliografia.html" class="active">Para estudar mais</a>
+  <a href="./bibliografia.html" class="">Para estudar mais</a>
 </li>
         </ul>
       </div>
@@ -134,46 +197,46 @@
   <div id="quarto-toc-sidebar" class=" pt-0 col col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-toc order-last"><nav id="TOC" role="doc-toc">
 <h2 id="toc-title">Nessa página</h2>
 <ul>
-<li><a href="#em-português" class="nav-link active" data-scroll-target="#em-português">Em Português</a></li>
-<li><a href="#em-outros-idiomas" class="nav-link" data-scroll-target="#em-outros-idiomas">Em outros idiomas</a></li>
-<li><a href="#dúvidas" class="nav-link" data-scroll-target="#dúvidas">Dúvidas</a></li>
-<li><a href="#comunidades" class="nav-link" data-scroll-target="#comunidades">Comunidades</a></li>
+<li><a href="#requisitos" class="nav-link active" data-scroll-target="#requisitos">Requisitos</a></li>
+<li><a href="#rstudio-cloud" class="nav-link" data-scroll-target="#rstudio-cloud">RStudio Cloud</a></li>
+<li><a href="#r-e-rstudio-instalados-no-computador" class="nav-link" data-scroll-target="#r-e-rstudio-instalados-no-computador">R e RStudio instalados no computador</a></li>
+<li><a href="#dia-1---08112021" class="nav-link" data-scroll-target="#dia-1---08112021">Dia 1 - 08/11/2021</a></li>
+<li><a href="#dia-2---09112021" class="nav-link" data-scroll-target="#dia-2---09112021">Dia 2 - 09/11/2021</a></li>
 </ul>
 </nav></div>
   <div class="col mx-auto col-sm-12 col-md-9 col-lg-7 col-xl-7 px-lg-4 pe-xxl-4 ps-xxl-3">
 <main>
 <header id="title-block-header">
-<h1 class="title d-none d-lg-block display-7">Para estudar mais</h1>
+<h1 class="title d-none d-lg-block display-7">Materiais</h1>
 </header>
 
-<ul>
-<li><p><a href="https://github.com/beatrizmilz/Ciencia_de_Dados_Ambientais#readme">Conjunto de links sobre Environmental Data Science</a></p></li>
-<li><p><a href="https://materiais-estudo-r.netlify.app/">Conjunto de links relacionados com R</a></p></li>
-</ul>
-<section id="em-português" class="level2">
-<h2 class="anchored" data-anchor-id="em-português">Em Português</h2>
-<p>Athos Damiani, Beatriz Milz, Caio Lente, Daniel Falbel, Fernando Correa, Julio Tricenti, Nicole Luduvice, William Amorim. <strong>Ciência de Dados em R</strong>. Disponível em: <a href="https://livro.curso-r.com/" class="uri">https://livro.curso-r.com/</a></p>
-<p>Caio Lente, Athos Damiani, Beatriz Milz, Daniel Falbel, Fernando Correa, Julio Trecenti, Tereza Lacerda, William Amorim. <strong>Zen do R.</strong> Disponível em: <a href="https://curso-r.github.io/zen-do-r/" class="uri">https://curso-r.github.io/zen-do-r/</a></p>
+<section id="requisitos" class="level2">
+<h2 class="anchored" data-anchor-id="requisitos">Requisitos</h2>
+<p>Para as atividades do mini-curso, usaremos o R e o RStudio. Podemos utilizar esses softwares de duas formas: instalando no nosso computador, ou usando uma versão online (que chamamos de RStudio Cloud).</p>
 </section>
-<section id="em-outros-idiomas" class="level2">
-<h2 class="anchored" data-anchor-id="em-outros-idiomas">Em outros idiomas</h2>
+<section id="rstudio-cloud" class="level2">
+<h2 class="anchored" data-anchor-id="rstudio-cloud">RStudio Cloud</h2>
 <ul>
-<li>Livro R para Ciência de Dados: Gratuito em <a href="https://www.curso-r.com/cursos/">Inglês</a> e em <a href="https://es.r4ds.hadley.nz/">Espanhol</a>.</li>
+<li>Acesse esse link e fazer um cadastro: COLOCAR O LINK DA CLOUD</li>
 </ul>
 </section>
-<section id="dúvidas" class="level2">
-<h2 class="anchored" data-anchor-id="dúvidas">Dúvidas</h2>
+<section id="r-e-rstudio-instalados-no-computador" class="level2">
+<h2 class="anchored" data-anchor-id="r-e-rstudio-instalados-no-computador">R e RStudio instalados no computador</h2>
 <ul>
-<li>Envie sempre no <a href="https://discourse.curso-r.com/">fórum da Curso-R</a></li>
+<li>Instalar o tidyverse:</li>
+</ul>
+<div class="cell">
+<div class="sourceCode" id="cb1"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Baixar o material do curso neste link:</li>
 </ul>
 </section>
-<section id="comunidades" class="level2">
-<h2 class="anchored" data-anchor-id="comunidades">Comunidades</h2>
-<ul>
-<li><p><a href="https://github.com/R-Ladies-Sao-Paulo/RLadies-Brasil">Eventos e redes sociais das R-Ladies no Brasil</a></p></li>
-<li><p><a href="https://t.me/rbrasiloficial">Telegram R-Brasil</a></p></li>
-<li><p>Comunidade do Twitter</p></li>
-</ul>
+<section id="dia-1---08112021" class="level2">
+<h2 class="anchored" data-anchor-id="dia-1---08112021">Dia 1 - 08/11/2021</h2>
+</section>
+<section id="dia-2---09112021" class="level2">
+<h2 class="anchored" data-anchor-id="dia-2---09112021">Dia 2 - 09/11/2021</h2>
 
 
 </section>

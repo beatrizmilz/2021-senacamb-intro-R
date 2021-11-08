@@ -7,11 +7,18 @@
     "text": "Athos Damiani, Beatriz Milz, Caio Lente, Daniel Falbel, Fernando Correa, Julio Tricenti, Nicole Luduvice, William Amorim. Ciência de Dados em R. Disponível em: https://livro.curso-r.com/\nCaio Lente, Athos Damiani, Beatriz Milz, Daniel Falbel, Fernando Correa, Julio Trecenti, Tereza Lacerda, William Amorim. Zen do R. Disponível em: https://curso-r.github.io/zen-do-r/"
   },
   {
-    "objectID": "bibliografia.html#em-inglês",
-    "href": "bibliografia.html#em-inglês",
+    "objectID": "bibliografia.html#em-outros-idiomas",
+    "href": "bibliografia.html#em-outros-idiomas",
     "title": "Para estudar mais",
-    "section": "Em Inglês",
+    "section": "Em outros idiomas",
     "text": "Livro R para Ciência de Dados: Gratuito em Inglês e em Espanhol."
+  },
+  {
+    "objectID": "bibliografia.html#comunidades",
+    "href": "bibliografia.html#comunidades",
+    "title": "Para estudar mais",
+    "section": "Comunidades",
+    "text": "Eventos e redes sociais das R-Ladies no Brasil\nTelegram R-Brasil\nComunidade do Twitter"
   },
   {
     "objectID": "licenca.html",
@@ -63,38 +70,52 @@
     "text": "Este mini-curso faz parte da programação do SENACAMB - Semana Nacional de Ciências Ambientais.\nR é uma linguagem de programação gratuita muito utilizada em pesquisa e em análise de dados, com muito potencial para ser usada para analisar dados ambientais.\nNeste minicurso, será apresentado uma introdução teórica breve sobre o contexto dessa linguagem de programação e Environmental Data Science (Ciência de Dados Ambientais).\nFalaremos do ciclo de ciência de dados, apresentaremos alguns conceitos de R básico e também alguns exemplos com o famoso ‘tidyverse’, um conjunto de ferramentas que usamos para trabalhar em cada uma das etapas do ciclo de ciência de dados (como a importação dos dados, arrumação, visualização, criação de relatórios, entre outros)."
   },
   {
-    "objectID": "faq.html",
-    "href": "faq.html",
-    "title": "Perguntas Frequentes (FAQ)",
-    "section": "",
-    "text": "O curso será online ou presencial?\n\n\nO curso será oferecido de forma online.\n\n\nApenas alunos da USP podem participar do curso?\n\n\nAs inscrições serão abertas para todas as pessoas interessadas.\n\n\nComo posso me inscrever?\n\n\nA inscrição será realizada através do IME-USP. Acompanhe as informações na página do Programa de Verão do IME-USP: https://www.ime.usp.br/~verao/\n\n\nO curso é gratuito?\n\n\nNão, o curso é pago. Acompanhe as informações na página do Programa de Verão do IME-USP: https://www.ime.usp.br/~verao/"
+    "objectID": "materiais.html#dia-1---08112021",
+    "href": "materiais.html#dia-1---08112021",
+    "title": "Materiais",
+    "section": "Dia 1 - 08/11/2021",
+    "text": ""
   },
   {
-    "objectID": "bibliografia.html#comunidades-e-locais-amigáveis-para-fazer-perguntas",
-    "href": "bibliografia.html#comunidades-e-locais-amigáveis-para-fazer-perguntas",
+    "objectID": "materiais.html#dia-2---09112021",
+    "href": "materiais.html#dia-2---09112021",
+    "title": "Materiais",
+    "section": "Dia 2 - 09/11/2021",
+    "text": ""
+  },
+  {
+    "objectID": "materiais.html#instalações",
+    "href": "materiais.html#instalações",
+    "title": "Materiais",
+    "section": "Instalações",
+    "text": "install.packages(\"tidyverse\")"
+  },
+  {
+    "objectID": "materiais.html#requisitos",
+    "href": "materiais.html#requisitos",
+    "title": "Materiais",
+    "section": "Requisitos",
+    "text": "Para as atividades do mini-curso, usaremos o R e o RStudio. Podemos utilizar esses softwares de duas formas: instalando no nosso computador, ou usando uma versão online (que chamamos de RStudio Cloud)."
+  },
+  {
+    "objectID": "materiais.html#rstudio-cloud",
+    "href": "materiais.html#rstudio-cloud",
+    "title": "Materiais",
+    "section": "RStudio Cloud",
+    "text": "Acesse esse link e fazer um cadastro: COLOCAR O LINK DA CLOUD"
+  },
+  {
+    "objectID": "materiais.html#r-e-rstudio-instalados-no-computador",
+    "href": "materiais.html#r-e-rstudio-instalados-no-computador",
+    "title": "Materiais",
+    "section": "R e RStudio instalados no computador",
+    "text": "Instalar o tidyverse:\n\n\ninstall.packages(\"tidyverse\")\n\n\nBaixar o material do curso neste link:"
+  },
+  {
+    "objectID": "bibliografia.html#dúvidas",
+    "href": "bibliografia.html#dúvidas",
     "title": "Para estudar mais",
-    "section": "Comunidades e locais amigáveis para fazer perguntas :)",
-    "text": "Eventos e redes sociais das R-Ladies no Brasil\nFórum Curso-R\nTelegram R-Brasil"
-  },
-  {
-    "objectID": "bibliografia.html#comunidades",
-    "href": "bibliografia.html#comunidades",
-    "title": "Para estudar mais",
-    "section": "Comunidades",
-    "text": "Locais amigáveis para fazer perguntas :)\n\nEventos e redes sociais das R-Ladies no Brasil\nFórum Curso-R\nTelegram R-Brasil"
-  },
-  {
-    "objectID": "bibliografia.html#em-outros-idiomas",
-    "href": "bibliografia.html#em-outros-idiomas",
-    "title": "Para estudar mais",
-    "section": "Em outros idiomas",
-    "text": "Livro R para Ciência de Dados: Gratuito em Inglês e em Espanhol."
-  },
-  {
-    "objectID": "index.html#senacamb---semana-nacional-de-ciências-ambientais",
-    "href": "index.html#senacamb---semana-nacional-de-ciências-ambientais",
-    "title": "Introdução à Linguagem R para Cientistas Ambientais",
-    "section": "SENACAMB - Semana Nacional de Ciências Ambientais",
-    "text": "R é uma linguagem de programação gratuita muito utilizada em pesquisa e em análise de dados, com muito potencial para ser usada para analisar dados ambientais.\nNeste minicurso, será apresentado uma introdução teórica breve sobre o contexto dessa linguagem de programação e Environmental Data Science (Ciência de Dados Ambientais).\nFalaremos do ciclo de ciência de dados, apresentaremos alguns conceitos de R básico e também alguns exemplos com o famoso ‘tidyverse’, um conjunto de ferramentas que usamos para trabalhar em cada uma das etapas do ciclo de ciência de dados (como a importação dos dados, arrumação, visualização, criação de relatórios, entre outros)."
+    "section": "Dúvidas",
+    "text": "Envie sempre no fórum da Curso-R"
   }
 ]

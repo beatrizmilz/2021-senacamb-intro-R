@@ -12,3 +12,8 @@ Neste minicurso, será apresentado uma introdução teórica breve sobre o conte
 Falaremos do ciclo de ciência de dados, apresentaremos alguns conceitos de R básico e  também alguns exemplos com o famoso 'tidyverse', um conjunto de  ferramentas que usamos para trabalhar em cada uma das etapas do ciclo de ciência de dados (como a importação dos dados, arrumação, visualização, criação de relatórios, entre outros).
 
 
+
+```{r eval=FALSE, include=FALSE}
+# para criar o zip do minicurso:
+CursoRutils::empacotar_material_alunos("material.txt")
+```
