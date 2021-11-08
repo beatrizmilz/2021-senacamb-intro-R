@@ -1115,7 +1115,7 @@ class: middle, center, inverse
 Eles precisam ser instalados e carregados.
 
 
-```{r echo=FALSE, out.width="50%"}
+```{r echo=FALSE, out.width="30%"}
 knitr::include_graphics("img/icon-packages.jpg")
 ```
 
