@@ -1,0 +1,316 @@
+---
+title: "Introdução à Linguagem R"
+subtitle: "para Cientistas Ambientais"  
+author: 
+  - "Beatriz Milz"
+date: 'Novembro de 2021'
+institute: 'SENACAMB - Semana Nacional de Ciências Ambientais'
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+      slideNumberFormat: "<a href='https://beatrizmilz.github.io/2021-senacamb-intro-R/'> Material do curso</a> - <a href='https://beatrizmilz.com/talk/'><i class='fas fa-external-link-alt'></i></a> - %current%/%total%" 
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+class: middle
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width = 9,
+  fig.height = 3.5,
+  fig.retina = 3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE,
+  hiline = TRUE,
+  fig.align = "center"
+)
+```
+
+```{r eval=FALSE, include=FALSE}
+# devtools::install_github("hadley/emo")
+# devtools::install_github("gadenbuie/xaringanExtra")
+# devtools::install_github("gadenbuie/ermoji")
+```
+
+```{css}
+/* custom.css */
+.left-code {
+  color: #777;
+  width: 38%;
+  height: 92%;
+  float: left;
+}
+.right-plot {
+  width: 60%;
+  float: right;
+  padding-left: 1%;
+}
+```
+
+
+```{r xaringanExtra-clipboard, echo=FALSE}
+xaringanExtra::use_clipboard()
+```
+
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#138583",
+  title_slide_background_color = "#51B8B6",
+  title_slide_text_color = "#FFFFFF",
+  inverse_text_color = "#138583",
+  inverse_header_color = "#138583",
+  inverse_background_color = "#dcf3f2",
+  secondary_color = "#EDBBC8",
+  
+  header_font_google = google_font("Josefin Slab", "600"),
+  text_font_google   = google_font("Work Sans", "300", "300i"),
+  code_font_google   = google_font("Fira Code"),
+  base_font_size = "25px"
+)
+```
+
+
+
+### R: Comunidades, eventos, pacotes, livros..
+<center>
+
+<a href='https://education.rstudio.com/trainers/'>  <img src='img/Hex/CertifiedRstudioTrainer.png' width="150px"></a>
+
+
+<a href='https://rladies.org/'>  <img src='img/Hex/1hexlogorladies.jpeg' width="150px"></a>
+
+<a href='https://curso-r.com/'>  <img src="img/Hex/curso-r-azul.jpg" width="150px"></a>
+
+<a href='https://livro.curso-r.com/'>  <img src='https://curso-r.com/images/produtos/hex-livro.png' width="150px"></a>
+
+
+
+<a href='https://saopaulo2019.satrdays.org/'>  <img src='img/Hex/2satrdaysp.png' width="150px"></a>
+<a href='https://latin-r.com/'>  <img src='img/Hex/4LatinR_hex_violeta-cut.jpg' width="150px"></a>
+<a href='https://carpentries.org/'>  <img src='img/Hex/carpentries.png' width="150px"> </a>
+<a href='https://user2021.r-project.org/'>  <img src='https://user2021.r-project.org/img/artwork/user-logo-color.png' width="150px"> </a>
+
+<a href='https://cienciadedatos.github.io/dados/'>  <img src='https://cienciadedatos.github.io/dados/reference/figures/dados-hex.png' width="150px"></a>
+<a href='https://beatrizmilz.github.io/mananciais/'>  <img src='https://beatrizmilz.github.io/mananciais/reference/figures/hexlogo.png' width="150px"></a>
+</center>
+
+
+---
+
+## Cronograma
+
+.pull-left[
+
+### Dia 1
+
+- Mais teórico!
+
+
+```{r, out.width="55%"}
+knitr::include_graphics("https://media.giphy.com/media/HgO7UWoXbkzrW/giphy.gif")
+```
+
+]
+
+.pull-right[
+
+### Dia 2
+
+- Mais prático!
+
+```{r, out.width="90%"}
+knitr::include_graphics("https://i.giphy.com/media/aNqEFrYVnsS52/giphy.webp")
+```
+]
+
+
+
+
+---
+class: inverse, middle, center
+
+# Como aprender R tem sido importante para mim?
+
+
+---
+
+## Reprodutibilidade
+
+```{r, out.width="55%", fig.cap="Ilustração por <a href='https://twitter.com/allison_horst'>Allison Horst</a>"}
+knitr::include_graphics("https://github.com/allisonhorst/stats-illustrations/raw/master/rstats-artwork/reproducibility_court.png")
+```
+
+---
+## Ferramentas antes de R
+
+.pull-left[
+
+- Relatórios e mapas mensais com: 
+
+```{r, out.width="50%"}
+knitr::include_graphics(c("img/pacote-office.jpeg", "img/QGis_Logo.png"))
+```
+
+
+
+]
+.pull-right[
+
+
+- Sem reprodutibilidade
+  
+- Demorado
+  
+- Muito trabalho repetitivo!
+
+
+
+]
+
+
+
+
+---
+
+
+
+.pull-left[
+
+## Ferramentas com R
+
+```{r, out.width="60%"}
+knitr::include_graphics(c("img/rstats.jpeg", "img/rstudio.png"))
+```
+]
+
+.pull-right[
+```{r, out.width="55%"}
+knitr::include_graphics(c( "img/tidyverse.png", "img/sf.gif"))
+```
+]
+
+---
+## Exemplo: pacote Mananciais
+
+
+- Preciso dos dados do Portal de Mananciais da SABESP"https://mananciais.sabesp.com.br/Situacao
+
+
+- Desenvolvi o pacote mananciais para facilitar o acesso à esses dados: https://beatrizmilz.github.io/mananciais/
+
+- Existe uma apresentação específica nesse tema: https://beatrizmilz.com/talk/2021-ser-uff/
+
+---
+
+```{r, out.width="80%"}
+xaringanExtra::embed_xaringan("https://beatrizmilz.github.io/mananciais/", max_width = "100%")
+```
+
+
+---
+
+
+
+```{r echo=TRUE}
+# Carregar pacotes
+library(ggplot2) # pacote para criar gráficos
+library(dplyr) # pacote para manipulação de dados
+library(magrittr, include.only = "%>%") # carregar o pipe
+
+# Buscar a base de dados
+mananciais <- mananciais::dados_mananciais() 
+
+tabela <- mananciais %>%
+  head(7) %>% 
+  gt::gt()
+```
+
+---
+class: middle, center
+
+```{r echo=FALSE}
+tabela
+```
+
+---
+
+```{r plot-label-fc, echo=TRUE,  fig.show="hide", fig.width=9, fig.height=5}
+mananciais %>%
+  filter(sistema == "Cantareira") %>%
+  ggplot() +
+  geom_line(aes(x = data, y = volume_porcentagem)) +
+  scale_y_continuous(breaks = c(-25, 0, 25, 50, 75, 100)) +
+  facet_wrap(~ sistema, ncol = 2) +
+  theme_bw() +
+  labs(x = "Ano", y = "Volume operacional (%)") +
+  ylim(-25, 100)
+```
+
+
+---
+
+
+
+![](`r knitr::fig_chunk("plot-label-fc", "png")`)
+
+---
+
+## Conheça a comunidade #rstats 
+
+```{r, out.width="40%", fig.cap="Ilustração por <a href='https://twitter.com/allison_horst'>Allison Horst</a>"}
+knitr::include_graphics("img/horst-starwars-hands.png")
+```
+
+
+---
+class: center
+
+## Muito obrigada!
+
+.pull-left[
+
+```{r echo=FALSE, fig.align='center', out.width="50%"}
+knitr::include_graphics("https://media.giphy.com/media/M9NbzZjAcxq9jS9LZJ/giphy.gif")
+```
+
+
+Slides criados usando os pacotes em R  📦 :
+
+[**xaringan**](https://github.com/yihui/xaringan)<br>
+[gadenbuie/xaringanthemer](https://github.com/gadenbuie/xaringanthemer)
+
+O chakra vem da biblioteca javascript [remark.js](https://remarkjs.com), e os pacotes  [**knitr**](http://yihui.name/knitr), e [R Markdown](https://rmarkdown.rstudio.com).
+]
+
+.pull-right[
+
+<center>
+<img src="https://avatars.githubusercontent.com/u/42153618?v=4" alt="Avatar" style="border-radius: 50%; max-width: 50%; "></center>
+
+<i class="fas fa-home"></i> [beatrizmilz.com](https://beatrizmilz.com)
+
+<i class="fab fa-twitter"></i> [@BeaMilz](https://twitter.com/BeaMilz)
+
+<!-- <i class="far fa-envelope"></i> [milz.bea@gmail.com](mailto:milz.bea@gmail.com) -->
+]
+
+
+
+<!-- inicio academic icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<!-- final academic icons -->
+
+ 
+<!-- inicio font awesome -->
+<script src="https://kit.fontawesome.com/1f72d6921a.js" crossorigin="anonymous"></script>
+
+<!-- final font awesome -->
