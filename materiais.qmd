@@ -8,7 +8,7 @@ Para as atividades do mini-curso, usaremos o R e o RStudio. Podemos utilizar ess
 
 ## RStudio Cloud
 
-- Acesse esse link e fazer um cadastro: https://rstudio.cloud/project/3189613
+- Acesse esse link e fazer um cadastro: <https://rstudio.cloud/project/3189613>
 
 
 ## R e RStudio instalados no computador
