@@ -217,7 +217,7 @@ dados %>%
 # podemos fazer uma sumarização
 dados_mes_ano %>%
   # agrupar por duas variáveis
-  group_by(reservatorio, mes_ano) %>%
+  group_by(reservatorio, mes, ano) %>%
   # calcular a média de volume util considerando cada mes/ano e reservatorio
   summarise(media_volume_util_percentual = mean(volume_util_percentual)) %>%
   # remover os grupos
@@ -265,20 +265,20 @@ writexl::write_xlsx(dados_mensais,
 
 # a) Faça uma sequência usando pipe, onde:
 # usando os dados de reservatorios
-  numero_reservatorios_por_estado <- reservatorios %>%
-# agrupe por estado (a coluna se chama estado_sigla)
+numero_reservatorios_por_estado <- reservatorios %>%
+  # agrupe por estado (a coluna se chama estado_sigla)
   ....   %>%
-# busque os nomes distintos/únicos de reservatórios
+  # busque os nomes distintos/únicos de reservatórios
   ....   %>%
-# faça uma contagem do número de linhas
+  # faça uma contagem do número de linhas
   ....   %>%
-# ordene de forma decrescente pelo número de linhas
+  # ordene de forma decrescente pelo número de linhas
   ....
 
 
 # b) Salve em um excel
 
 ......(numero_reservatorios_por_estado,
-                    "dados_exportados/numero_reservatorios_por_estado.xlsx")
+       "dados_exportados/numero_reservatorios_por_estado.xlsx")
 
 # Abra no seu computador o arquivo, para ver o resultado!
