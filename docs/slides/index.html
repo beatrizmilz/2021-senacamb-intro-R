@@ -152,32 +152,24 @@ https://beatrizmilz.github.io/2021-senacamb-intro-R/
     
   - Mantido pela [R Development Core Team](https://cran.r-project.org/)
 
----
-
-## RStudio
-
-**RStudio** é uma IDE (_integrated development environment_) da Linguagem R, ou seja, um ambiente de desenvolvimento que utilizamos para editar e executar os códigos em R.
-
-&lt;img src="img/01-rstudio.png" width="700px" style="display: block; margin: auto;" /&gt;
-
 
 
 ---
 class: middle, center
 
-### As vantagens de analisar dados usando linguagens de programação
+# As vantagens de analisar dados usando linguagens de programação
 
 .footnote[Slide da [Curso-R](https://curso-r.com/)]
 ---
 class: middle, center
 
 ### As principais linguagens de programação para ciência de dados são
-# Código Aberto
+## Código Aberto
 
 .footnote[Slide da [Curso-R](https://curso-r.com/)]
 
 ---
-# O que significa ser código aberto?
+## O que significa ser código aberto?
 
 &lt;br&gt;
 
@@ -198,16 +190,25 @@ class: middle, center
 
 ---
 class: middle, center
-# O código é uma linguagem
+## O código é uma linguagem
 
 .footnote[Slide da [Curso-R](https://curso-r.com/)]
 
 ---
-# Podemos documentar a nossa análise
+- Podemos documentar a nossa análise
+Slide da [Curso-R](https://curso-r.com/)
 
 
 
 
+```r
+image_read("https://jeroen.github.io/images/frink.png") %&gt;%
+  image_rotate(270) %&gt;%
+  image_background("blue", flatten = TRUE) %&gt;%
+  image_border("red", "10x10") %&gt;%
+  image_annotate("Linguagens de programação ainda\nsão linguagens!",
+                 color = "white", size = 30)
+```
 
 --
 
@@ -224,17 +225,17 @@ class: middle, center
 
 ]
 
-.footnote[Slide da [Curso-R](https://curso-r.com/)]
+
 
 
 ---
 class: middle, center
-# O código é texto
+## O código é texto
 
 .footnote[Slide da [Curso-R](https://curso-r.com/)]
 
 ---
-# Podemos copiar e colar
+## Podemos copiar e colar
 
 &lt;br&gt;
 &lt;center&gt;
@@ -336,34 +337,16 @@ class: inverse, middle, center
 </div>
 
 
----
-
-
-
-
-```r
-# Carregar pacotes
-library(ggplot2) # pacote para criar gráficos
-library(dplyr) # pacote para manipulação de dados
-library(magrittr, include.only = "%&gt;%") # carregar o pipe
-
-# Buscar a base de dados
-mananciais &lt;- mananciais::dados_mananciais() 
-
-tabela &lt;- mananciais %&gt;%
-  head(7) %&gt;% 
-  gt::gt()
-```
 
 ---
 class: middle, center
 
-<div id="ewbqzdppvk" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="djgadktlmh" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#ewbqzdppvk .gt_table {
+#djgadktlmh .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -388,7 +371,7 @@ class: middle, center
   border-left-color: #D3D3D3;
 }
 
-#ewbqzdppvk .gt_heading {
+#djgadktlmh .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -400,7 +383,7 @@ class: middle, center
   border-right-color: #D3D3D3;
 }
 
-#ewbqzdppvk .gt_title {
+#djgadktlmh .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -410,7 +393,7 @@ class: middle, center
   border-bottom-width: 0;
 }
 
-#ewbqzdppvk .gt_subtitle {
+#djgadktlmh .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -420,13 +403,13 @@ class: middle, center
   border-top-width: 0;
 }
 
-#ewbqzdppvk .gt_bottom_border {
+#djgadktlmh .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ewbqzdppvk .gt_col_headings {
+#djgadktlmh .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -441,7 +424,7 @@ class: middle, center
   border-right-color: #D3D3D3;
 }
 
-#ewbqzdppvk .gt_col_heading {
+#djgadktlmh .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -461,7 +444,7 @@ class: middle, center
   overflow-x: hidden;
 }
 
-#ewbqzdppvk .gt_column_spanner_outer {
+#djgadktlmh .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -473,15 +456,15 @@ class: middle, center
   padding-right: 4px;
 }
 
-#ewbqzdppvk .gt_column_spanner_outer:first-child {
+#djgadktlmh .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ewbqzdppvk .gt_column_spanner_outer:last-child {
+#djgadktlmh .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ewbqzdppvk .gt_column_spanner {
+#djgadktlmh .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -493,7 +476,7 @@ class: middle, center
   width: 100%;
 }
 
-#ewbqzdppvk .gt_group_heading {
+#djgadktlmh .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -515,7 +498,7 @@ class: middle, center
   vertical-align: middle;
 }
 
-#ewbqzdppvk .gt_empty_group_heading {
+#djgadktlmh .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -530,15 +513,15 @@ class: middle, center
   vertical-align: middle;
 }
 
-#ewbqzdppvk .gt_from_md > :first-child {
+#djgadktlmh .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ewbqzdppvk .gt_from_md > :last-child {
+#djgadktlmh .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ewbqzdppvk .gt_row {
+#djgadktlmh .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -557,7 +540,7 @@ class: middle, center
   overflow-x: hidden;
 }
 
-#ewbqzdppvk .gt_stub {
+#djgadktlmh .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -569,7 +552,7 @@ class: middle, center
   padding-left: 12px;
 }
 
-#ewbqzdppvk .gt_summary_row {
+#djgadktlmh .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -579,7 +562,7 @@ class: middle, center
   padding-right: 5px;
 }
 
-#ewbqzdppvk .gt_first_summary_row {
+#djgadktlmh .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -589,7 +572,7 @@ class: middle, center
   border-top-color: #D3D3D3;
 }
 
-#ewbqzdppvk .gt_grand_summary_row {
+#djgadktlmh .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -599,7 +582,7 @@ class: middle, center
   padding-right: 5px;
 }
 
-#ewbqzdppvk .gt_first_grand_summary_row {
+#djgadktlmh .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -609,11 +592,11 @@ class: middle, center
   border-top-color: #D3D3D3;
 }
 
-#ewbqzdppvk .gt_striped {
+#djgadktlmh .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ewbqzdppvk .gt_table_body {
+#djgadktlmh .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -622,7 +605,7 @@ class: middle, center
   border-bottom-color: #D3D3D3;
 }
 
-#ewbqzdppvk .gt_footnotes {
+#djgadktlmh .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -636,13 +619,13 @@ class: middle, center
   border-right-color: #D3D3D3;
 }
 
-#ewbqzdppvk .gt_footnote {
+#djgadktlmh .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#ewbqzdppvk .gt_sourcenotes {
+#djgadktlmh .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -656,41 +639,41 @@ class: middle, center
   border-right-color: #D3D3D3;
 }
 
-#ewbqzdppvk .gt_sourcenote {
+#djgadktlmh .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#ewbqzdppvk .gt_left {
+#djgadktlmh .gt_left {
   text-align: left;
 }
 
-#ewbqzdppvk .gt_center {
+#djgadktlmh .gt_center {
   text-align: center;
 }
 
-#ewbqzdppvk .gt_right {
+#djgadktlmh .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ewbqzdppvk .gt_font_normal {
+#djgadktlmh .gt_font_normal {
   font-weight: normal;
 }
 
-#ewbqzdppvk .gt_font_bold {
+#djgadktlmh .gt_font_bold {
   font-weight: bold;
 }
 
-#ewbqzdppvk .gt_font_italic {
+#djgadktlmh .gt_font_italic {
   font-style: italic;
 }
 
-#ewbqzdppvk .gt_super {
+#djgadktlmh .gt_super {
   font-size: 65%;
 }
 
-#ewbqzdppvk .gt_footnote_marks {
+#djgadktlmh .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 65%;
@@ -775,25 +758,1047 @@ class: middle, center
 
 ---
 
+&lt;img src="index_files/figure-html/plot-label-fc-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+
+
+---
+class: inverse, middle, center
+
+
+# RStudio
+
+
+---
+
+## RStudio
+
+**RStudio** é uma IDE (_integrated development environment_) da Linguagem R, ou seja, um ambiente de desenvolvimento que utilizamos para editar e executar os códigos em R.
+
+&lt;img src="img/01-rstudio.png" width="700px" style="display: block; margin: auto;" /&gt;
+
+
+
+
+---
+## RStudio
+
+&lt;img src="img/haydee1.jpg" width="700px" style="display: block; margin: auto;" /&gt;
+
+Fonte: [Haydee Svab](https://www.slideshare.net/mobile/haydeesvab/anlise-crtica-de-dados-primeiros-passos-com-r)
+
+---
+
+## RStudio
+
+&lt;img src="img/haydee2.jpg" width="700px" style="display: block; margin: auto;" /&gt;
+
+Fonte: [Haydee Svab](https://www.slideshare.net/mobile/haydeesvab/anlise-crtica-de-dados-primeiros-passos-com-r)
+
+---
+
+## RStudio
+
+&lt;img src="img/haydee3.jpg" width="700px" style="display: block; margin: auto;" /&gt;
+
+Fonte: [Haydee Svab](https://www.slideshare.net/mobile/haydeesvab/anlise-crtica-de-dados-primeiros-passos-com-r)
+
+---
+
+
+## RStudio
+
+&lt;img src="img/haydee4.jpg" width="700px" style="display: block; margin: auto;" /&gt;
+
+Fonte: [Haydee Svab](https://www.slideshare.net/mobile/haydeesvab/anlise-crtica-de-dados-primeiros-passos-com-r)
+
+---
+
+## RStudio
+
+&lt;img src="img/haydee5.jpg" width="700px" style="display: block; margin: auto;" /&gt;
+
+Fonte: [Haydee Svab](https://www.slideshare.net/mobile/haydeesvab/anlise-crtica-de-dados-primeiros-passos-com-r)
+
+---
+
+
+## RStudio
+
+&lt;img src="img/haydee6.jpg" width="700px" style="display: block; margin: auto;" /&gt;
+
+Fonte: [Haydee Svab](https://www.slideshare.net/mobile/haydeesvab/anlise-crtica-de-dados-primeiros-passos-com-r)
+
+---
+## RStudio
+
+&lt;img src="img/haydee7.jpg" width="700px" style="display: block; margin: auto;" /&gt;
+
+Fonte: [Haydee Svab](https://www.slideshare.net/mobile/haydeesvab/anlise-crtica-de-dados-primeiros-passos-com-r)
+
+---
+## RStudio
+  
+
+&lt;img src="img/haydee8.jpg" width="700px" style="display: block; margin: auto;" /&gt;
+
+Fonte: [Haydee Svab](https://www.slideshare.net/mobile/haydeesvab/anlise-crtica-de-dados-primeiros-passos-com-r)
+
+
+---
+
+### `R` como calculadora
+
+- O `R` permite realizar muitas operações matemáticas!
+
+.pull-left[
 
 ```r
-mananciais %&gt;%
-  filter(sistema == "Cantareira") %&gt;%
-  ggplot() +
-  geom_line(aes(x = data, y = volume_porcentagem)) +
-  scale_y_continuous(breaks = c(-25, 0, 25, 50, 75, 100)) +
-  facet_wrap(~ sistema, ncol = 2) +
-  theme_bw() +
-  labs(x = "Ano", y = "Volume operacional (%)") +
-  ylim(-25, 100)
+2 + 5    # adição
 ```
+
+```
+## [1] 7
+```
+
+```r
+9 - 4    # subtração
+```
+
+```
+## [1] 5
+```
+]
+
+.pull-right[
+
+```r
+5 * 2    # multiplicação
+```
+
+```
+## [1] 10
+```
+
+```r
+7 / 5    # divisão
+```
+
+```
+## [1] 1.4
+```
+]
+
+- `CTRL + ENTER`: executa a linha selecionada no script.
 
 
 ---
 
 
+### `R` como calculadora
 
-![](index_files/figure-html/plot-label-fc-1.png)
+
+```r
+# oito elevado ao quadrado
+8 ^ 2    # potencia
+```
+
+```
+## [1] 64
+```
+
+```r
+# a raiz quadrada de 1024
+sqrt(1024) 
+```
+
+```
+## [1] 32
+```
+
+A ordem matemática das operações também vale no R.
+
+
+---
+
+## O que é um objeto?
+
+- Ao se desenvolver um projeto, você irá trabalhar com diversos tipos de arquivos, além de informações que serão repetidas ao longo do script.
+
+- Para reutilizar essas informações ao longo do script utilizamos o que chamamos de **objeto**
+
+- Um objeto retém e representa um valor, função ou base de dados
+
+---
+
+## Atribuindo valor a um objeto no R
+
+- Para atribuir um valor a um objeto no R, utilizamos o operador:
+.center[**`&lt;-`**]
+
+.center[`nome_do_objeto &lt;- valor`]
+
+- Atalho: `ALT` + `-`: cria o `&lt;-` sinal de atribuição.
+
+Exemplo:
+
+
+```r
+minha_idade &lt;- 28
+minha_idade
+```
+
+```
+## [1] 28
+```
+
+
+---
+
+## Exemplo: 
+
+
+```r
+nome &lt;- "Daenerys Targaryen"
+nome
+```
+
+```
+## [1] "Daenerys Targaryen"
+```
+
+```r
+salario &lt;- 3984.23
+salario
+```
+
+```
+## [1] 3984.23
+```
+
+```r
+ativo &lt;- TRUE
+ativo
+```
+
+```
+## [1] TRUE
+```
+
+
+---
+## Nomes de objetos
+
+- Os nomes devem começar com uma letra. Podem conter letras, números, _ e .
+
+- Não usar acentuação e espaços nos nomes de objetos.
+
+- Recomendação : **usar_snake_case**, ou seja, palavras escritas em minúsculo separadas pelo underscore (`_`).
+
+- O `R` é *case sensitive*, isto é, faz a diferenciação entre as letras minúsculas e maiúsculas. Portanto, um objeto chamado `teste` é diferente de uma outro objeto chamada `Teste`.
+
+---
+
+
+## Funções
+
+
+- Funções permitem __automatizar tarefas__ comuns de forma mais poderosa do que copiar e colar.
+
+- O R possui muitas funções já implementadas.
+
+- Pacotes são coleções de funções, dados e documentação que ampliam as capacidades do R básico. Veremos como instalá-los no final desta atividade!
+
+- Você pode desenvolver suas próprias funções!  👩‍💻
+
+---
+
+### Exemplo de funções básicas do R 
+
+```r
+# Combinar elementos - Função c() 
+ano_nascimento_irmaos &lt;- c(1993, 1998, 2001, 2012, 2012)
+```
+--
+
+```r
+# Podemos fazer operações com o resultado
+idade_irmaos &lt;- 2020 - ano_nascimento_irmaos
+idade_irmaos
+```
+
+```
+## [1] 27 22 19  8  8
+```
+
+--
+
+```r
+# Calculando a média - Função mean()
+media_idade_irmaos &lt;- mean(idade_irmaos)
+media_idade_irmaos
+```
+
+```
+## [1] 16.8
+```
+
+
+
+
+---
+
+### Estrutura de uma função
+
+- __Nome__ - é como ela fica salva no ambiente, esse nome é importante para usarmos a função.
+
+- __Argumentos__ -  são parâmetros usados internamente pela função. Muitas funções possuem argumentos com valores padrão.
+
+
+
+```r
+# para usar essa função
+nome_da_funcao(nome_do_argumento = valor_do_argumento)
+```
+
+---
+
+
+  
+### Exemplo sobre argumentos
+
+
+```r
+# Arredondar valores - função round()
+# help(round)
+# round(x, digits = 0)
+
+round(media_idade_irmaos)
+```
+
+```
+## [1] 17
+```
+
+```r
+round(media_idade_irmaos, digits = 1)
+```
+
+```
+## [1] 16.8
+```
+
+---
+
+## Funções importantes do R base
+
+|  Função |  O que retorna? |
+|--:|--:|
+|  `sum()` |  Soma  | 
+|  `mean()` |  Média |
+|  `median()` |  Mediana |
+|  `var()` |  Variância (simples) |
+|  `sd()` |  Desvio Padrão |
+|  `max()` |  Valor máximo  |
+|  `min()` |  Valor mínimo |
+|  `round()` |  Valor arredondado |
+
+
+
+
+---
+
+## Help!
+
+- Pedir ajuda: **help**(nome_da_funcao) ou **?**nome_da_funcao.
+
+
+```r
+help(sum)
+?sum
+```
+
+
+- Se a dúvida permanecer, procure no [Stack OverFlow](https://stackoverflow.com/) ou Google.
+
+- E se ainda tiver dúvidas, pergunte para a comunidade (há grupos no Telegram e outras redes sociais).
+
+
+---
+class: middle, center, inverse
+
+# Operadores Relacionais e Lógicos
+
+---
+## Operadores Relacionais
+
+- Igual a: **==** 
+
+- Diferente de: **!=** 
+
+- Maior que: **&gt;** 
+
+- Maior ou igual: **&gt;=** 
+
+- Menor que: **&lt;** 
+
+- Menor ou igual: **&lt;=** 
+
+---
+##  Operadores Relacionais
+
+Igual a: **==**
+
+```r
+TRUE == TRUE
+```
+
+```
+## [1] TRUE
+```
+
+```r
+TRUE == FALSE
+```
+
+```
+## [1] FALSE
+```
+
+---
+## Operadores Relacionais
+
+Diferente de **!=**
+
+```r
+TRUE != TRUE
+```
+
+```
+## [1] FALSE
+```
+
+```r
+TRUE != FALSE
+```
+
+```
+## [1] TRUE
+```
+
+---
+
+##  Operadores Relacionais
+.pull-left[
+Menor que: **&lt;**
+
+```r
+3 &lt; 5
+```
+
+```
+## [1] TRUE
+```
+
+Maior que: **&gt;**
+
+```r
+3 &gt; 5
+```
+
+```
+## [1] FALSE
+```
+]
+
+.pull-right[
+
+Menor ou igual a: **&lt;=**
+
+```r
+10 &lt;= 10
+```
+
+```
+## [1] TRUE
+```
+
+Maior ou igual a: **&gt;=**
+
+```r
+10 &gt;= 10
+```
+
+```
+## [1] TRUE
+```
+
+]
+
+
+---
+
+## Operadores Lógicos
+
+- AND - E: **&amp;**
+
+Será verdadeiro se os dois forem verdadeiros (`TRUE`)
+.pull-left[
+
+```r
+x &lt;- 5
+
+ x &gt;= 3 &amp; x &lt;=7
+```
+
+```
+## [1] TRUE
+```
+]
+
+.pull-right[
+
+```r
+y &lt;- 2
+
+ y &gt;= 3 &amp; y &lt;= 7
+```
+
+```
+## [1] FALSE
+```
+]
+
+---
+
+
+## Operadores Lógicos
+
+- OR - OU: **|**
+
+Será verdadeiro se um dos dois forem verdadeiros (`TRUE`)
+.pull-left[
+
+```r
+y &lt;- 2
+
+ y &gt;= 3 | y &lt;=7
+```
+
+```
+## [1] TRUE
+```
+]
+
+.pull-right[
+
+```r
+y &lt;- 1
+
+ y &gt;= 3 | y == 0
+```
+
+```
+## [1] FALSE
+```
+]
+
+
+---
+
+## Operadores Lógicos
+
+- NOT - Negação: **!** 
+
+
+
+```r
+!TRUE
+```
+
+```
+## [1] FALSE
+```
+
+```r
+!FALSE
+```
+
+```
+## [1] TRUE
+```
+
+```r
+x &lt;- 5
+(!x &lt; 4)
+```
+
+```
+## [1] TRUE
+```
+
+
+---
+class: middle, center, inverse
+
+# Tipos básicos de dados
+
+
+---
+
+## Tipos básicos de dados
+
+São os tipos básicos de dados que podem ser representados na linguagem R. É neles que guardamos as informações que necessitamos para um algoritmo.
+
+- **Integer**: números inteiros 
+
+- **Double/Numeric**: números racionais 
+
+- **Logical**: tipos lógicos, `TRUE` ou `FALSE` 
+
+- **Character**: texto (sempre entre aspas)
+
+- **Factor**: dados categóricos (não falaremos aqui)
+
+
+
+- A função `class()` retorna o tipo do dado.
+
+---
+## Números
+
+- Números racionais serão considerados como `double/numeric`: 
+
+
+```r
+class(3)
+```
+
+```
+## [1] "numeric"
+```
+
+```r
+class(3.1)
+```
+
+```
+## [1] "numeric"
+```
+
+---
+## Lógicos
+
+- Verdadeiro (`TRUE`) ou Falso (`FALSE`)
+
+
+```r
+class(TRUE)
+```
+
+```
+## [1] "logical"
+```
+
+- O R entende `TRUE` sendo igual a um, e `FALSE` sendo igual a zero. 
+
+- Isso significa que podemos fazer operações matemáticas com eles (como por exemplo somar):
+
+
+```r
+TRUE + TRUE + TRUE + FALSE
+```
+
+```
+## [1] 3
+```
+
+---
+
+##  Textos
+
+- **Qualquer** código entre aspas será interpretado como texto (`character`):
+
+
+```r
+class("TEXTO")
+```
+
+```
+## [1] "character"
+```
+
+```r
+escola &lt;- c("Fundamental", "Médio", "Superior")
+
+class(escola)
+```
+
+```
+## [1] "character"
+```
+
+
+```r
+class("3")
+```
+
+```
+## [1] "character"
+```
+
+
+---
+
+## NA
+
+Uma característica importante do R que pode dificultar a comparação são os valores ausentes ou **NAs** (não disponíveis). 
+
+**NA** representa um valor desconhecido. 
+
+---
+
+## NA
+
+-  Operações envolvendo um valor desconhecido também será desconhecido:
+
+.pull-left[
+
+```r
+NA &gt; 10
+```
+
+```
+## [1] NA
+```
+
+```r
+10 == NA
+```
+
+```
+## [1] NA
+```
+]
+
+.pull-right[
+
+```r
+NA + 10
+```
+
+```
+## [1] NA
+```
+
+```r
+NA / 2
+```
+
+```
+## [1] NA
+```
+]
+
+---
+
+## NA
+
+
+
+```r
+NA == NA
+```
+
+```
+## [1] NA
+```
+
+
+---
+
+## NA
+
+`is.na()` é a função que testa se um objeto é NA.
+
+
+```r
+vetor_numerico &lt;- c(NA, 1, 5, 2, 5, NA)
+
+is.na(vetor_numerico)
+```
+
+```
+## [1]  TRUE FALSE FALSE FALSE FALSE  TRUE
+```
+
+```r
+!is.na(vetor_numerico)
+```
+
+```
+## [1] FALSE  TRUE  TRUE  TRUE  TRUE FALSE
+```
+
+
+---
+
+## Argumento importante: 
+
+### `na.rm = TRUE`
+
+.pull-left[ 
+
+```r
+sum(vetor_numerico)
+```
+
+```
+## [1] NA
+```
+
+```r
+sum(vetor_numerico, na.rm = TRUE)
+```
+
+```
+## [1] 13
+```
+]
+
+.pull-right[
+
+```r
+mean(vetor_numerico)
+```
+
+```
+## [1] NA
+```
+
+```r
+mean(vetor_numerico, na.rm = TRUE)
+```
+
+```
+## [1] 3.25
+```
+]
+---
+
+## Conversão de classes
+
+Podemos alterar o tipo de dado de um objeto com as funções iniciadas com `as.`:  
+
+
+
+- `as.numeric()`
+
+- `as.integer()`
+
+- `as.logical()`
+
+- `as.character()` 
+
+- `as.factor()` 
+
+
+---
+
+## Conversão de classes
+
+**Exemplos de conversão de classes**
+
+
+```r
+vetor_logical &lt;- c(TRUE, FALSE, TRUE, FALSE)
+
+as.integer(vetor_logical)
+```
+
+```
+## [1] 1 0 1 0
+```
+
+```r
+as.numeric(vetor_logical)
+```
+
+```
+## [1] 1 0 1 0
+```
+
+```r
+as.character(vetor_logical)
+```
+
+```
+## [1] "TRUE"  "FALSE" "TRUE"  "FALSE"
+```
+
+---
+
+## Conversão de classes
+
+**Exemplos de conversão de classes**
+
+
+```r
+frutas &lt;- c("banana", "maça", "melancia")
+
+as.integer(frutas)
+```
+
+```
+## [1] NA NA NA
+```
+
+```r
+as.numeric(frutas)
+```
+
+```
+## [1] NA NA NA
+```
+
+```r
+as.character(frutas)
+```
+
+```
+## [1] "banana"   "maça"     "melancia"
+```
+
+---
+class: middle, center, inverse
+
+# Tipos de objetos
+
+
+
+
+---
+
+## Tipos de objetos
+
+- No R, os 4 principais tipos de dados são: `vetor`, `matriz`, `lista`, `data.frame`
+
+- Vamos focar em dois:  `vetor` e `data.frame`, pois:
+  - são os que mais usamos nas tarefas comuns de análise de dados,
+  - são conceitos importantes para utilizar o tidyverse.
+
+---
+## Vetores
+
+- Armazena elementos de mesma classe, apenas uma dimensão.
+
+- São criados usando a função `c()`
+
+- Exemplo:
+
+
+```r
+primeiro_semestre &lt;- c("Janeiro", "Fevereiro", "Março",
+                       "Abril", "Maio", "Junho")
+```
+
+
+```r
+# Retorna o comprimento do vetor - quantos elementos ele tem?
+length(primeiro_semestre)
+```
+
+```
+## [1] 6
+```
+
+---
+## Dataframes
+
+- Possuem duas dimensões: linhas e colunas.
+
+- Cada colunas pode ser de classes diferentes.
+
+- Pense em uma tabela, como está acostumada a ver no Excel por exemplo. 
+
+
+
+
+|especie           |ilha      | comprimento_bico| profundidade_bico| comprimento_nadadeira| massa_corporal|sexo  |  ano|
+|:-----------------|:---------|----------------:|-----------------:|---------------------:|--------------:|:-----|----:|
+|Pinguim-de-adélia |Torgersen |             39.1|              18.7|                   181|           3750|macho | 2007|
+|Pinguim-de-adélia |Torgersen |             39.5|              17.4|                   186|           3800|fêmea | 2007|
+|Pinguim-de-adélia |Torgersen |             40.3|              18.0|                   195|           3250|fêmea | 2007|
+|Pinguim-de-adélia |Torgersen |               NA|                NA|                    NA|             NA|NA    | 2007|
+|Pinguim-de-adélia |Torgersen |             36.7|              19.3|                   193|           3450|fêmea | 2007|
+|Pinguim-de-adélia |Torgersen |             39.3|              20.6|                   190|           3650|macho | 2007|
+
+---
+class: middle, center, inverse
+
+# Pacotes no R
+
+
+
+
+
+---
+## Pacotes no R
+
+**Pacotes** são coleções de funções, dados e documentação que estendem as capacidades do `R` básico.
+
+Eles precisam ser instalados e carregados.
+
+
+&lt;img src="img/icon-packages.jpg" width="50%" style="display: block; margin: auto;" /&gt;
+
+---
+    
+
+
+## Instalação de Pacotes:
+
+- Via CRAN: 
+
+
+`install.packages("nome-do-pacote")`
+
+
+```r
+install.packages("tidyverse")
+```
+
+- Via GitHub:
+
+
+`devtools::install_github("nome-da-org/nome-do-repo)`
+
+
+```r
+devtools::install_github("tidyverse/dplyr")
+```
+
+---
+
+## Carregar pacotes:
+
+-  Função: `library(nome-do-pacote)`
+
+
+```r
+library(tidyverse)
+```
+
+
+## Dicas sobre Pacotes
+
+1. Você só precisa instalar o pacote uma vez, mas precisa carregá-lo sempre que começar uma nova sessão;
+
+2. Para instalar o pacote use as aspas;  
+
+3. Para carregar o pacote, não é necessário utilizar aspas.
+
+
 
 ---
 
