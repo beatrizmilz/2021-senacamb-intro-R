@@ -14,81 +14,18 @@
     "text": "Livro R para Ciência de Dados: Gratuito em Inglês e em Espanhol."
   },
   {
+    "objectID": "bibliografia.html#dúvidas",
+    "href": "bibliografia.html#dúvidas",
+    "title": "Para estudar mais",
+    "section": "Dúvidas",
+    "text": "Envie sempre no fórum da Curso-R"
+  },
+  {
     "objectID": "bibliografia.html#comunidades",
     "href": "bibliografia.html#comunidades",
     "title": "Para estudar mais",
     "section": "Comunidades",
-    "text": "Eventos e redes sociais das R-Ladies no Brasil\nTelegram R-Brasil\nComunidade do Twitter"
-  },
-  {
-    "objectID": "licenca.html",
-    "href": "licenca.html",
-    "title": "Licença de uso",
-    "section": "",
-    "text": "Estes materiais são disponibilizados com a licença Creative Commons Atribuição-Compartilha Igual (CC BY-SA), ou seja, você pode compartilhar e adaptar este material, porém deve atribuir os créditos para as pessoas autoras, adicionando um link para o material original, e o seu material também deve ter este mesmo tipo de licença.\nSaiba mais em: Creative Commons"
-  },
-  {
-    "objectID": "profs.html",
-    "href": "profs.html",
-    "title": "Ministrante",
-    "section": "",
-    "text": ""
-  },
-  {
-    "objectID": "informacoes-gerais.html#público-alvo",
-    "href": "informacoes-gerais.html#público-alvo",
-    "title": "Informações gerais",
-    "section": "Público Alvo",
-    "text": "Estudantes de graduação que desejam se aprofundar no conhecimento do R.\nProfissionais do mercado de trabalho que usam o R e desejam aprimorar os seus conhecimentos.\nPessoas na academia com interesse em tornar suas análises e códigos mais legíveis, reprodutíveis, eficientes e organizados."
-  },
-  {
-    "objectID": "informacoes-gerais.html#pré-requisitos",
-    "href": "informacoes-gerais.html#pré-requisitos",
-    "title": "Informações gerais",
-    "section": "Pré-requisitos",
-    "text": "É recomendado que as pessoas participantes estejam familiarizadas com o conteúdo do curso Introdução à programação em R."
-  },
-  {
-    "objectID": "informacoes-gerais.html#método-avaliativo",
-    "href": "informacoes-gerais.html#método-avaliativo",
-    "title": "Informações gerais",
-    "section": "Método avaliativo",
-    "text": "Exercícios (em classe e extraclasse)\nProjeto prático final (extraclasse)\nPara receber o certificado, é necessário ter frequência de 75%."
-  },
-  {
-    "objectID": "informacoes-gerais.html#informações-gerais",
-    "href": "informacoes-gerais.html#informações-gerais",
-    "title": "Informações gerais",
-    "section": "Informações gerais",
-    "text": "Carga horária: 15h (5 aulas de 3h)\nLocal: Online\nDatas: 2, 7, 9, 14, 16 de fevereiro de 2022 (2ª e 4ª)\nHorário: Manhã (09h-12h)\nVagas: 75"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Introdução à Linguagem R para Cientistas Ambientais",
-    "section": "",
-    "text": "Este mini-curso faz parte da programação do SENACAMB - Semana Nacional de Ciências Ambientais.\nR é uma linguagem de programação gratuita muito utilizada em pesquisa e em análise de dados, com muito potencial para ser usada para analisar dados ambientais.\nNeste minicurso, será apresentado uma introdução teórica breve sobre o contexto dessa linguagem de programação e Environmental Data Science (Ciência de Dados Ambientais).\nFalaremos do ciclo de ciência de dados, apresentaremos alguns conceitos de R básico e também alguns exemplos com o famoso ‘tidyverse’, um conjunto de ferramentas que usamos para trabalhar em cada uma das etapas do ciclo de ciência de dados (como a importação dos dados, arrumação, visualização, criação de relatórios, entre outros)."
-  },
-  {
-    "objectID": "materiais.html#dia-1---08112021",
-    "href": "materiais.html#dia-1---08112021",
-    "title": "Materiais",
-    "section": "Dia 1 - 08/11/2021",
-    "text": ""
-  },
-  {
-    "objectID": "materiais.html#dia-2---09112021",
-    "href": "materiais.html#dia-2---09112021",
-    "title": "Materiais",
-    "section": "Dia 2 - 09/11/2021",
-    "text": ""
-  },
-  {
-    "objectID": "materiais.html#instalações",
-    "href": "materiais.html#instalações",
-    "title": "Materiais",
-    "section": "Instalações",
-    "text": "install.packages(\"tidyverse\")"
+    "text": "Eventos e redes sociais das R-Ladies no Brasil\nTelegram R-Brasil\nComunidade do Twitter: #rstats"
   },
   {
     "objectID": "materiais.html#requisitos",
@@ -109,13 +46,41 @@
     "href": "materiais.html#r-e-rstudio-instalados-no-computador",
     "title": "Materiais",
     "section": "R e RStudio instalados no computador",
-    "text": "Instalar o tidyverse:\n\n\ninstall.packages(\"tidyverse\")\n\n\nBaixar o material do curso neste link:"
+    "text": "Instalar o R. Consulte o tutorial aqui.\nInstalar o RStudio. Consulte o tutorial aqui.\nInstalar o tidyverse:\n\n\ninstall.packages(\"tidyverse\")\n\n\nBaixar o material do curso neste link. Descompacte o conteúdo, e abra o arquivo 2021-senacamb-intro-R.Rproj (o ícone é um cubo azul)."
   },
   {
-    "objectID": "bibliografia.html#dúvidas",
-    "href": "bibliografia.html#dúvidas",
-    "title": "Para estudar mais",
-    "section": "Dúvidas",
-    "text": "Envie sempre no fórum da Curso-R"
+    "objectID": "materiais.html#dia-1---08112021",
+    "href": "materiais.html#dia-1---08112021",
+    "title": "Materiais",
+    "section": "Dia 1 - 08/11/2021",
+    "text": ""
+  },
+  {
+    "objectID": "materiais.html#dia-2---09112021",
+    "href": "materiais.html#dia-2---09112021",
+    "title": "Materiais",
+    "section": "Dia 2 - 09/11/2021",
+    "text": ""
+  },
+  {
+    "objectID": "licenca.html",
+    "href": "licenca.html",
+    "title": "Licença de uso",
+    "section": "",
+    "text": "Estes materiais são disponibilizados com a licença Creative Commons Atribuição-Compartilha Igual (CC BY-SA), ou seja, você pode compartilhar e adaptar este material, porém deve atribuir os créditos para as pessoas autoras, adicionando um link para o material original, e o seu material também deve ter este mesmo tipo de licença.\nSaiba mais em: Creative Commons"
+  },
+  {
+    "objectID": "profs.html",
+    "href": "profs.html",
+    "title": "Ministrante",
+    "section": "",
+    "text": ""
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Introdução à Linguagem R para Cientistas Ambientais",
+    "section": "",
+    "text": "Este mini-curso faz parte da programação do SENACAMB - Semana Nacional de Ciências Ambientais.\nR é uma linguagem de programação gratuita muito utilizada em pesquisa e em análise de dados, com muito potencial para ser usada para analisar dados ambientais.\nNeste minicurso, será apresentado uma introdução teórica breve sobre o contexto dessa linguagem de programação e Environmental Data Science (Ciência de Dados Ambientais).\nFalaremos do ciclo de ciência de dados, apresentaremos alguns conceitos de R básico e também alguns exemplos com o famoso ‘tidyverse’, um conjunto de ferramentas que usamos para trabalhar em cada uma das etapas do ciclo de ciência de dados (como a importação dos dados, arrumação, visualização, criação de relatórios, entre outros)."
   }
 ]

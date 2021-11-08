@@ -17,16 +17,14 @@ site:
     style: "floating"
     search: true
     contents:
-      - section: "Informações sobre o mini-curso"
+      - section: "Informações"
         contents:
           - href: index.qmd
             text: Página inicial
+          - materiais.qmd
           - profs.qmd
           - bibliografia.qmd
-      - section: "Outras informações"
-        contents:
           - licenca.qmd
-
 
 format:
   html:

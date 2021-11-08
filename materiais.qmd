@@ -13,13 +13,17 @@ Para as atividades do mini-curso, usaremos o R e o RStudio. Podemos utilizar ess
 
 ## R e RStudio instalados no computador
 
-- Instalar o tidyverse:
+1) Instalar o R. [Consulte o tutorial aqui](https://livro.curso-r.com/1-1-instalacao-do-r.html). 
+
+2) Instalar o RStudio. [Consulte o tutorial aqui](https://livro.curso-r.com/1-2-instalacao-do-rstudio.html). 
+
+3) Instalar o tidyverse:
 
 ```{r eval=FALSE, include=TRUE}
 install.packages("tidyverse")
 ```
 
-- Baixar o material do curso neste link:
+4) [Baixar o material do curso neste link](https://github.com/beatrizmilz/2021-senacamb-intro-R/raw/main/material_do_curso.zip). Descompacte o conteúdo, e abra o arquivo `2021-senacamb-intro-R.Rproj` (o ícone é um cubo azul).
 
 ## Dia 1 - 08/11/2021
 

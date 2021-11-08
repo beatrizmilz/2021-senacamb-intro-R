@@ -31,4 +31,4 @@ Caio Lente, Athos Damiani, Beatriz Milz, Daniel Falbel, Fernando Correa, Julio T
 
 - [Telegram R-Brasil](https://t.me/rbrasiloficial)
 
-- Comunidade do Twitter
+- Comunidade do Twitter: [#rstats](https://twitter.com/search?q=%23rstats&src=hashtag_click)
