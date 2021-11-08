@@ -389,7 +389,7 @@ install.packages("devtools")  # Não execute agora.
 # sendo neste padrão: "organizacao/pacote"
 # (o pacote pode "ser" de alguma pessoa também)
 
-devtools::install_github("tidyverse/dplyr")  # Não execute agora.
+devtools::install_github("brunomioto/reservatoriosBR")
 
 
 # Carregar pacotes --------------
@@ -398,4 +398,6 @@ devtools::install_github("tidyverse/dplyr")  # Não execute agora.
 # usar aspas.
 
 
-library(base)
+library(tidyverse)
+
+library(reservatoriosBR)
