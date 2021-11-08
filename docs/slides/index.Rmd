@@ -78,8 +78,24 @@ style_duo_accent(
 )
 ```
 
+.pull-left[
 
+## Beatriz Milz
 
+- 2019 - * - Doutoranda em Ciência Ambiental - PROCAM/IEE/USP
+
+- 2016-2018 - Mestrado em Ciências - Programa de Pós-Graduação em Análise Ambiental Integrada - UNIFESP
+
+- 2012-2015 - Bacharelado em Gestão Ambiental - EACH/USP 
+]
+
+.pull-right[
+<BR>
+<center>
+<img src="https://avatars.githubusercontent.com/u/42153618?v=4" alt="Avatar" style="border-radius: 50%; max-width: 50%; "></center>
+
+]
+---
 ### R: Comunidades, eventos, pacotes, livros..
 <center>
 
@@ -133,7 +149,162 @@ knitr::include_graphics("https://i.giphy.com/media/aNqEFrYVnsS52/giphy.webp")
 ]
 
 
+---
 
+## Página do curso
+
+
+```{r, out.width="80%"}
+xaringanExtra::embed_xaringan("https://beatrizmilz.github.io/2021-senacamb-intro-R/", max_width = "70%")
+```
+
+https://beatrizmilz.github.io/2021-senacamb-intro-R/
+
+
+---
+## O que é o R?
+
+> "R é um ambiente de software livre para computação estatística e gráficos". (https://www.r-project.org/)
+
+--
+
+- **Por que usar o R**?
+
+  - É uma linguagem de programação que possui muitas ferramentas para análise de dados
+
+  - É _código aberto_ (open source)
+
+  - Possui uma comunidade ativa de pessoas desenvolvedoras
+
+  - É flexível, permite desenvolver funções e pacotes para facilitar o trabalho 
+
+  - Está disponível, gratuitamente, em diferentes plataformas: Windows, Linux e Mac
+    
+  - Mantido pela [R Development Core Team](https://cran.r-project.org/)
+
+---
+
+## RStudio
+
+**RStudio** é uma IDE (_integrated development environment_) da Linguagem R, ou seja, um ambiente de desenvolvimento que utilizamos para editar e executar os códigos em R.
+
+```{r echo=FALSE, out.width="700px"}
+knitr::include_graphics("img/01-rstudio.png")
+```
+
+
+
+---
+class: middle, center
+
+### As vantagens de analisar dados usando linguagens de programação
+
+.footnote[Slide da [Curso-R](https://curso-r.com/)]
+---
+class: middle, center
+
+### As principais linguagens de programação para ciência de dados são
+# Código Aberto
+
+.footnote[Slide da [Curso-R](https://curso-r.com/)]
+
+---
+# O que significa ser código aberto?
+
+<br>
+
+1. Acesso gratuito.
+
+2. Todos podem usar as melhores ferramentas independentemente do poder financeiro.
+
+3. Estudantes podem usar as mesmas ferramentas que profissionais.
+
+4. Você pode corrigir problemas e aprimorar a linguagem.
+
+5. Você pode desenvolver suas próprias ferramentas.
+
+6. Possibilita a existência de uma comunidade ativa.
+
+.footnote[Slide da [Curso-R](https://curso-r.com/)]
+
+
+---
+class: middle, center
+# O código é uma linguagem
+
+.footnote[Slide da [Curso-R](https://curso-r.com/)]
+
+---
+# Podemos documentar a nossa análise
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+library(magrittr)
+library(magick)
+library(ggplot2)
+library(dplyr)
+library(viridis)
+```
+
+```{r frink, eval = FALSE, }
+image_read("https://jeroen.github.io/images/frink.png") %>%
+  image_rotate(270) %>%
+  image_background("blue", flatten = TRUE) %>%
+  image_border("red", "10x10") %>%
+  image_annotate("Linguagens de programação ainda\nsão linguagens!",
+                 color = "white", size = 30)
+```
+
+--
+
+.pull-left[
+#### Entrada
+<img src = "https://jeroen.github.io/images/frink.png" style="width:25%">
+]
+
+--
+
+.pull-right[
+#### Saída
+```{r frink-out, ref.label="frink", echo=FALSE}
+
+```
+
+]
+
+.footnote[Slide da [Curso-R](https://curso-r.com/)]
+
+
+---
+class: middle, center
+# O código é texto
+
+.footnote[Slide da [Curso-R](https://curso-r.com/)]
+
+---
+# Podemos copiar e colar
+
+<br>
+<center>
+<img src="img/copy-paste.png" style="width: 50%">
+</center>
+
+.footnote[Slide da [Curso-R](https://curso-r.com/)]
+
+---
+class: middle, center
+
+## Por que o R?
+
+.footnote[Slide da [Curso-R](https://curso-r.com/)]
+
+---
+
+## O ciclo da ciência de dados
+
+<img src="img/ciclo-ciencia-de-dados.png" style = "display: block; margin-left: auto; margin-right: auto; width: 60%;">
+
+
+.footnote[Slide da [Curso-R](https://curso-r.com/)]
 
 ---
 class: inverse, middle, center
