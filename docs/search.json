@@ -1,33 +1,5 @@
 [
   {
-    "objectID": "bibliografia.html#em-português",
-    "href": "bibliografia.html#em-português",
-    "title": "Para estudar mais",
-    "section": "Em Português",
-    "text": "Athos Damiani, Beatriz Milz, Caio Lente, Daniel Falbel, Fernando Correa, Julio Tricenti, Nicole Luduvice, William Amorim. Ciência de Dados em R. Disponível em: https://livro.curso-r.com/\nCaio Lente, Athos Damiani, Beatriz Milz, Daniel Falbel, Fernando Correa, Julio Trecenti, Tereza Lacerda, William Amorim. Zen do R. Disponível em: https://curso-r.github.io/zen-do-r/"
-  },
-  {
-    "objectID": "bibliografia.html#em-outros-idiomas",
-    "href": "bibliografia.html#em-outros-idiomas",
-    "title": "Para estudar mais",
-    "section": "Em outros idiomas",
-    "text": "Livro R para Ciência de Dados: Gratuito em Inglês e em Espanhol."
-  },
-  {
-    "objectID": "bibliografia.html#dúvidas",
-    "href": "bibliografia.html#dúvidas",
-    "title": "Para estudar mais",
-    "section": "Dúvidas",
-    "text": "Envie sempre no fórum da Curso-R"
-  },
-  {
-    "objectID": "bibliografia.html#comunidades",
-    "href": "bibliografia.html#comunidades",
-    "title": "Para estudar mais",
-    "section": "Comunidades",
-    "text": "Eventos e redes sociais das R-Ladies no Brasil\nTelegram R-Brasil\nComunidade do Twitter: #rstats"
-  },
-  {
     "objectID": "materiais.html#requisitos",
     "href": "materiais.html#requisitos",
     "title": "Materiais",
@@ -75,6 +47,34 @@
     "title": "Licença de uso",
     "section": "",
     "text": "Estes materiais são disponibilizados com a licença Creative Commons Atribuição-Compartilha Igual (CC BY-SA), ou seja, você pode compartilhar e adaptar este material, porém deve atribuir os créditos para as pessoas autoras, adicionando um link para o material original, e o seu material também deve ter este mesmo tipo de licença.\nSaiba mais em: Creative Commons"
+  },
+  {
+    "objectID": "bibliografia.html#em-português",
+    "href": "bibliografia.html#em-português",
+    "title": "Para estudar mais",
+    "section": "Em Português",
+    "text": "Athos Damiani, Beatriz Milz, Caio Lente, Daniel Falbel, Fernando Correa, Julio Tricenti, Nicole Luduvice, William Amorim. Ciência de Dados em R. Disponível em: https://livro.curso-r.com/\nCaio Lente, Athos Damiani, Beatriz Milz, Daniel Falbel, Fernando Correa, Julio Trecenti, Tereza Lacerda, William Amorim. Zen do R. Disponível em: https://curso-r.github.io/zen-do-r/"
+  },
+  {
+    "objectID": "bibliografia.html#em-outros-idiomas",
+    "href": "bibliografia.html#em-outros-idiomas",
+    "title": "Para estudar mais",
+    "section": "Em outros idiomas",
+    "text": "Livro R para Ciência de Dados: Gratuito em Inglês e em Espanhol."
+  },
+  {
+    "objectID": "bibliografia.html#dúvidas",
+    "href": "bibliografia.html#dúvidas",
+    "title": "Para estudar mais",
+    "section": "Dúvidas",
+    "text": "Envie sempre no fórum da Curso-R"
+  },
+  {
+    "objectID": "bibliografia.html#comunidades",
+    "href": "bibliografia.html#comunidades",
+    "title": "Para estudar mais",
+    "section": "Comunidades",
+    "text": "Eventos e redes sociais das R-Ladies no Brasil\nTelegram R-Brasil\nComunidade do Twitter: #rstats"
   },
   {
     "objectID": "profs.html",

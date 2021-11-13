@@ -1,7 +1,7 @@
 project:
   type: site
   output-dir: docs
-
+lang: pt
 site:
   title: "Introdução à Linguagem R para Cientistas Ambientais"
   footer: "Página criada usando [quarto](https://quarto.org/). <br>Licença de uso: [Creative Commons Atribuição-Compartilha Igual (CC BY-SA)](licenca.qmd)."
