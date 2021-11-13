@@ -27,6 +27,8 @@
 
 8 ^ 2    # potenciação
 
+
+
 # Funções matemáticas ------
 
 sqrt(1024) # radiciação
@@ -41,13 +43,18 @@ exp(0.5) # e^(1/2)
 
 # Objetos -------
 
-minha_idade <- 27
+
+minha_idade <- 28
 
 minha_idade
 
 minha_idade + 1
 
 minha_idade # Qual é o resultado esperado?
+
+
+minha_idade <- minha_idade + 1
+
 
 # Buscando ajuda no R?------------
 

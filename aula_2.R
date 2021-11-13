@@ -3,7 +3,7 @@
 # que fazem parte do tidyverse
 
 # Carregar pacotes --------------------------------------------------------
-
+# install.packages("tidyverse")
 library(tidyverse)
 
 
@@ -129,6 +129,8 @@ dados_arrumados <- dados %>%
   # transformar o codigo do reservatório em um texto
   mutate(codigo_reservatorio = as.character(codigo_reservatorio))
 
+# ver os dados
+glimpse(dados_arrumados)
 
 # Exercícios --------------------------------------------------------------
 
@@ -164,6 +166,11 @@ dados %>%
   filter(data >= "2021-01-01")
 
 
+# operador %in% para filtrar valores que fazem parte de um conjunto
+dados %>%
+  filter(reservatorio %in% c("Paiva Castro", "Atibainha"))
+
+
 ## arrange() -------------
 # podemos reordenar a base!
 # por exemplo:
@@ -190,9 +197,14 @@ dados %>%
 ## group_by() ------------------------------------------
 
 # criando as colunas mes e ano
-dados_mes_ano <- dados %>%
+dados_mes_ano <- dados_arrumados %>%
   mutate(mes = lubridate::month(data),
          ano = lubridate::year(data))
+
+dados_mes_ano %>%
+  distinct(reservatorio)
+
+
 
 # agrupar por uma variável
 dados_mes_ano %>%
@@ -207,17 +219,22 @@ dados_mes_ano %>%
 
 dados %>%
   # contar linhas!
-  summarise(n = n())
+  summarise(numero_de_linhas = n())
 
 dados %>%
   # calcular a média de volume util considerando a base toda!
   summarise(media_volume_util_percentual = mean(volume_util_percentual))
 
+# começando a unir group_by e summarise
+dados %>%
+  group_by(reservatorio) %>%
+  summarise(numero_de_linhas = n())
+
 
 # podemos fazer uma sumarização
 dados_mes_ano %>%
   # agrupar por duas variáveis
-  group_by(reservatorio, mes, ano) %>%
+  group_by(reservatorio, ano, mes) %>%
   # calcular a média de volume util considerando cada mes/ano e reservatorio
   summarise(media_volume_util_percentual = mean(volume_util_percentual)) %>%
   # remover os grupos
@@ -235,7 +252,8 @@ dados_mensais <- dados_mes_ano %>%
   ) %>%
   mutate(saldo = soma_afluencia - soma_defluencia) %>%
   # remover os grupos
-  ungroup()
+  ungroup() %>%
+  arrange(saldo)
 
 # distinct() valores únicos! ---------
 
@@ -265,20 +283,20 @@ writexl::write_xlsx(dados_mensais,
 
 # a) Faça uma sequência usando pipe, onde:
 # usando os dados de reservatorios
-numero_reservatorios_por_estado <- reservatorios %>%
-  # agrupe por estado (a coluna se chama estado_sigla)
+  numero_reservatorios_por_estado <- reservatorios %>%
+# agrupe por estado (a coluna se chama estado_sigla)
   ....   %>%
-  # busque os nomes distintos/únicos de reservatórios
+# busque os nomes distintos/únicos de reservatórios
   ....   %>%
-  # faça uma contagem do número de linhas
+# faça uma contagem do número de linhas
   ....   %>%
-  # ordene de forma decrescente pelo número de linhas
+# ordene de forma decrescente pelo número de linhas
   ....
 
 
 # b) Salve em um excel
 
 ......(numero_reservatorios_por_estado,
-       "dados_exportados/numero_reservatorios_por_estado.xlsx")
+                    "dados_exportados/numero_reservatorios_por_estado.xlsx")
 
 # Abra no seu computador o arquivo, para ver o resultado!
