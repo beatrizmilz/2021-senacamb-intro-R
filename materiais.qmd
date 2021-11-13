@@ -23,7 +23,9 @@ Para as atividades do mini-curso, usaremos o R e o RStudio. Podemos utilizar ess
 install.packages("tidyverse")
 ```
 
-4) [Baixar o material do curso neste link](https://github.com/beatrizmilz/2021-senacamb-intro-R/raw/main/material_do_curso.zip). Descompacte o conteúdo, e abra o arquivo `2021-senacamb-intro-R.Rproj` (o ícone é um cubo azul).
+4) [Baixar o material do curso neste link](https://github.com/beatrizmilz/2021-senacamb-intro-R/raw/main/material_do_curso.zip). Descompacte o conteúdo, e abra o arquivo `2021-senacamb-intro-R.Rproj` (o ícone é um cubo azul). 
+
+<div class="alert alert-primary" role="alert">Esse material está atualizado com o conteúdo oferecido no minicurso!</div>
 
 ## Dia 1 - 08/11/2021
 
@@ -31,6 +33,7 @@ install.packages("tidyverse")
 
 - R Script: arquivo `aula_1.R` que está no [material do curso](https://github.com/beatrizmilz/2021-senacamb-intro-R/raw/main/material_do_curso.zip).
 
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/l7Qso07Llkw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
 
 ## Dia 2 - 09/11/2021
 
@@ -39,3 +42,22 @@ install.packages("tidyverse")
 - Respostas dos exercicios: arquivo `aula_2_respostas.R` que está no [material do curso](https://github.com/beatrizmilz/2021-senacamb-intro-R/raw/main/material_do_curso.zip).
 
 - Os dados usados nessa aula foram obtidos através do pacote [reservatoriosBR](https://brunomioto.github.io/reservatoriosBR/).
+
+- Video: <https://www.youtube.com/watch?v=bAN2Yj5IeX0>
+
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/bAN2Yj5IeX0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+
+
+## Links citados na conversa ao final do workshop
+
+- Pediram recomendações de cursos:
+
+  - [Curso-R](https://curso-r.com/): para quem está começando, recomendo os cursos de **Introdução à programação com R** e **R para Ciência de Dados I**.
+
+  - [Curso de verão IME USP](https://www.ime.usp.br/~verao/) terá cursos online entre janeiro e fevereiro de 2022, e serão 3 cursos relacionados à R.
+
+- [Trabalho final do curso de coleta de dados na internet - dados de qualidade da água na CETESB](https://beatriz-milz.shinyapps.io/trabalho_final_ws/)
+
+- [Post sobre coleta de dados do wikipedia: criando um gráfico de episódios do Naruto Shippuden](https://beatrizmilz.com/blog/2021-05-24-naruto/)
+
+- [Post sobre o pacote bibliometrix](https://beatrizmilz.com/blog/2021-03-07-estudando-bibliometrix/)
