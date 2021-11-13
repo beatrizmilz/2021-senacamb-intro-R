@@ -36,4 +36,8 @@ format:
     toc-title: "Nessa página"
 
 
-
+website:
+  twitter-card: true
+  creator: "@beamilz"
+  site: "@beamilz"
+  site-url: "https://beatrizmilz.github.io/2021-senacamb-intro-R/"

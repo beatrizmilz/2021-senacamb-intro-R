@@ -63,6 +63,13 @@
     "text": "Script: arquivo aula_2.R que está no material do curso.\nRespostas dos exercicios: arquivo aula_2_respostas.R que está no material do curso.\nOs dados usados nessa aula foram obtidos através do pacote reservatoriosBR.\nVideo: https://www.youtube.com/watch?v=bAN2Yj5IeX0"
   },
   {
+    "objectID": "materiais.html#links-citados-na-conversa-ao-final-do-workshop",
+    "href": "materiais.html#links-citados-na-conversa-ao-final-do-workshop",
+    "title": "Materiais",
+    "section": "Links citados na conversa ao final do workshop",
+    "text": "Pediram recomendações de cursos:\n\nCurso-R: para quem está começando, recomendo os cursos de Introdução à programação com R e R para Ciência de Dados I.\nCurso de verão IME USP terá cursos online entre janeiro e fevereiro de 2022, e serão 3 cursos relacionados à R.\n\nTrabalho final do curso de coleta de dados na internet - dados de qualidade da água na CETESB\nPost sobre coleta de dados do wikipedia: criando um gráfico de episódios do Naruto Shippuden\nPost sobre o pacote bibliometrix"
+  },
+  {
     "objectID": "licenca.html",
     "href": "licenca.html",
     "title": "Licença de uso",
@@ -82,12 +89,5 @@
     "title": "Introdução à Linguagem R para Cientistas Ambientais",
     "section": "",
     "text": "Este mini-curso faz parte da programação do SENACAMB - Semana Nacional de Ciências Ambientais.\nR é uma linguagem de programação gratuita muito utilizada em pesquisa e em análise de dados, com muito potencial para ser usada para analisar dados ambientais.\nNeste minicurso, será apresentado uma introdução teórica breve sobre o contexto dessa linguagem de programação e Environmental Data Science (Ciência de Dados Ambientais).\nFalaremos do ciclo de ciência de dados, apresentaremos alguns conceitos de R básico e também alguns exemplos com o famoso ‘tidyverse’, um conjunto de ferramentas que usamos para trabalhar em cada uma das etapas do ciclo de ciência de dados (como a importação dos dados, arrumação, visualização, criação de relatórios, entre outros)."
-  },
-  {
-    "objectID": "materiais.html#links-citados-na-conversa-ao-final-do-workshop",
-    "href": "materiais.html#links-citados-na-conversa-ao-final-do-workshop",
-    "title": "Materiais",
-    "section": "Links citados na conversa ao final do workshop",
-    "text": "Pediram recomendações de cursos:\n\nCurso-R: para quem está começando, recomendo os cursos de Introdução à programação com R e R para Ciência de Dados I.\nCurso de verão IME USP terá cursos online entre janeiro e fevereiro de 2022, e serão 3 cursos relacionados à R.\n\nTrabalho final do curso de coleta de dados na internet - dados de qualidade da água na CETESB\nPost sobre coleta de dados do wikipedia: criando um gráfico de episódios do Naruto Shippuden\nPost sobre o pacote bibliometrix"
   }
 ]
