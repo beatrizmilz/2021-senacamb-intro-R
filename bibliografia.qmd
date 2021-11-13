@@ -17,7 +17,7 @@ Caio Lente, Athos Damiani, Beatriz Milz, Daniel Falbel, Fernando Correa, Julio T
 
 ## Em outros idiomas
 
-- Livro R para Ciência de Dados: Gratuito em [Inglês](https://www.curso-r.com/cursos/) e em [Espanhol](https://es.r4ds.hadley.nz/). 
+- Livro R para Ciência de Dados: Gratuito em [Inglês](https://r4ds.hadley.nz/) e em [Espanhol](https://es.r4ds.hadley.nz/). 
 
 
 ## Dúvidas
